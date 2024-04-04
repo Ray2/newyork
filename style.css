@@ -3,7 +3,7 @@
   --color-text-main: #000000;
   --color-primary: #ffff00;
   --wrapper-height: 87vh;
-  --image-max-width: 300px;
+  --image-max-width: 700px;
   --image-margin: 3rem;
   --font-family: "EB";
   --font-family-header: "EB";
@@ -22,7 +22,9 @@
     format("opentype");
 }
 
-
+body, html {
+  overflow: hidden; /* Prevents scrolling in both directions */
+}
 
 body {
   font-family: EB;
@@ -31,7 +33,6 @@ body {
 
 /* Page structure */
 .wrapper {
-  min-height: var(--wrapper-height);
   display: grid;
   place-items: center;
   margin: 0 1rem;
@@ -54,6 +55,12 @@ body {
   margin: 1rem auto 0;
   font-family: EB;
   font-size: 20px;
+}
+
+.liberty {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  align-self: end;
 }
 
 
