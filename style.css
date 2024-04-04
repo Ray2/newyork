@@ -47,26 +47,30 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  align-self: end;
 }
 
 .newyork {
   max-width: 100%;
   max-height: var(--image-max-width);
   margin-top: var(--image-margin);
-  
+  margin-top: -300px; 
+  align-self: center;
 }
 
 .description {
   margin: 1rem auto 0;
   font-family: EB;
   font-size: 20px;
+  max-width: 50%;
+  margin-top: -300px; 
 }
 
 .liberty {
   max-width: 100%;
   max-height: var(--image-max-width);
   align-self: end;
-
+  bottom: 0;
 }
 
 
